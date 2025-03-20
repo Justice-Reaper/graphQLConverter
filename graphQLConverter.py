@@ -50,7 +50,7 @@ def main():
         graphql_json = json.loads(cleaned_json_str)
 
     except json.JSONDecodeError:
-        print("Error: Invalid JSON provided")
+        print("error: Invalid JSON provided")
         parser.print_help()
         sys.exit(1)
 
