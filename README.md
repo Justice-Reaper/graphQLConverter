@@ -21,18 +21,18 @@ Este script convierte un JSON de GraphQL en un formato x-www-form-urlencoded, qu
 ## Panel de ayuda
 
 ```
-# python graphql_converter.py -h
-usage: graphql_converter.py [-h] [json]
+# python graphQLConverter.py -h
+usage: graphQLConverter.py [-h] [json]
 
-Convert a GraphQL JSON to URL encoded format
+convert a GraphQL JSON to URL encoded format
 
 positional arguments:
-  json        GraphQL JSON as a string. Example: '{"query": "{ me { name } }"}'
+  json        GraphQL JSON as a string. example: '{"query": "{ me { name } }"}'
 
 options:
   -h, --help  show this help message and exit
 
-Example: python graphql_converter.py '{"query": "{ me { name } }"}'
+example: python graphQLConverter.py '{"query": "{ me { name } }"}'
 ```
 
 ## Ejemplo de uso
