@@ -5,7 +5,7 @@ import sys
 import re
 
 def clean_json_string(json_str):
-    cleaned_str = re.sub(r'[\n\r\t]', '', json_str)
+    cleaned_str = re.sub(r'[\n\r\f\t\v]', '', json_str)
     cleaned_str = re.sub(r'\s{2,}', '', cleaned_str)
     return cleaned_str
 
@@ -28,15 +28,15 @@ def json_to_urlencoded(data):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Convert a GraphQL JSON to URL encoded format",
-        epilog='Example: python graphQLConverter.py \'{"query": "{ me { name } }"}\''
+        description="convert a GraphQL JSON to URL encoded format",
+        epilog='example: python graphQLConverter.py \'{"query": "{ me { name } }"}\''
     )
 
     parser.add_argument(
         "json",
         type=str,
         nargs="?",
-        help='GraphQL JSON as a string. Example: \'{"query": "{ me { name } }"}\''
+        help='GraphQL JSON as a string. example: \'{"query": "{ me { name } }"}\''
     )
 
     args, unknown = parser.parse_known_args()
