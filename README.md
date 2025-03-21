@@ -1,4 +1,4 @@
-# GraphQLConverter
+# graphQLConverter
 
 Este script convierte un JSON de GraphQL en un formato x-www-form-urlencoded, que es comúnmente utilizado en solicitudes HTTP con el Content-Type: application/x-www-form-urlencoded. Además, limpia el JSON de caracteres innecesarios (como saltos de línea, tabulaciones y espacios múltiples) para garantizar que la cadena resultante sea válida y esté optimizada para su uso en solicitudes web
 
