@@ -1,24 +1,24 @@
 # graphQLConverter
 
-Este script convierte un JSON de GraphQL en un formato x-www-form-urlencoded, que es comúnmente utilizado en solicitudes HTTP con el Content-Type: application/x-www-form-urlencoded. Además, limpia el JSON de caracteres innecesarios (como saltos de línea, tabulaciones y espacios múltiples) para garantizar que la cadena resultante sea válida y esté optimizada para su uso en solicitudes web
+This script converts a GraphQL JSON into an x-www-form-urlencoded format, commonly used in HTTP requests with Content-Type: application/x-www-form-urlencoded. It also cleans the JSON of unnecessary characters (like line breaks, tabs, and multiple spaces) to ensure the resulting string is valid and optimized for web requests.
 
-## Características
+## Features
 
-### Conversión de JSON a URL-encoded
-   - Transforma una cadena JSON de GraphQL en una cadena codificada en un formato x-www-form-urlencoded
+### JSON to URL-encoded Conversion
+   - Transforms a GraphQL JSON string into an x-www-form-urlencoded string
 
-### Limpieza de JSON
-   - Elimina caracteres innecesarios como saltos de línea (\n), tabulaciones (\t), espacios múltiples y otros caracteres de control que podrían afectar la validez del JSON
+### JSON Cleaning
+   - Removes unnecessary characters like line breaks (\n), tabs (\t), multiple spaces, and other control characters that could affect JSON validity
 
-### Fácil de usar
-   - El script se ejecuta desde la línea de comandos y acepta el JSON como argumento
-   - Proporciona un panel de ayuda (-h) para guiar al usuario en su uso
+### Easy to Use
+   - The script runs from the command line and accepts JSON as an argument
+   - Provides a help panel (-h) to guide the user
 
-### Robusto
-   - Valida el JSON de entrada y muestra un mensaje de error claro si el JSON no es válido
-   - Maneja argumentos adicionales y muestra la ayuda si se detectan errores en los argumentos
+### Robust
+   - Validates the input JSON and displays a clear error message if the JSON is invalid
+   - Handles additional arguments and shows help if argument errors are detected
 
-## Panel de ayuda
+## Help Panel
 
 ```
 # python graphQLConverter.py -h
@@ -35,7 +35,7 @@ options:
 example: python graphQLConverter.py '{"query": "{ me { name } }"}'
 ```
 
-## Ejemplo de uso
+## Usage Example
 
 ```
 # git clone https://github.com/Justice-Reaper/graphQLConverter.git
