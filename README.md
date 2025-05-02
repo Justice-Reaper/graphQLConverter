@@ -38,9 +38,9 @@ example: python graphQLConverter.py '{"query": "{ me { name } }"}'
 ## Usage Example
 
 ```
-# git clone https://github.com/Justice-Reaper/graphQLConverter.git
-# cd graphQLConverter
-# python GraphQLConverter.py '{"query":"\n    mutation changeEmail($input: ChangeEmailInput!) {\n        changeEmail(input: $input) {\n            email\n        }\n    }\n","operationName":"changeEmail","variables":{"input":{"email":"testing@gmail.com"}}}'
+git clone https://github.com/Justice-Reaper/graphQLConverter.git
+cd graphQLConverter
+python GraphQLConverter.py '{"query":"\n    mutation changeEmail($input: ChangeEmailInput!) {\n        changeEmail(input: $input) {\n            email\n        }\n    }\n","operationName":"changeEmail","variables":{"input":{"email":"testing@gmail.com"}}}'
 URL Encoded Data:
 query=mutation+changeEmail%28%24input%3A+ChangeEmailInput%21%29+%7BchangeEmail%28input%3A+%24input%29+%7Bemail%7D%7D&operationName=changeEmail&variables=%7B%22input%22%3A+%7B%22email%22%3A+%22testing%40gmail.com%22%7D%7D
 ```
