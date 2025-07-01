@@ -1,6 +1,6 @@
 # graphQLConverter
 
-This script converts a GraphQL JSON into an x-www-form-urlencoded format, commonly used in HTTP requests with Content-Type: application/x-www-form-urlencoded. It also cleans the JSON of unnecessary characters (like line breaks, tabs, and multiple spaces) to ensure the resulting string is valid and optimized for web requests.
+This script converts a GraphQL JSON into an x-www-form-urlencoded format, commonly used in HTTP requests with Content-Type: application/x-www-form-urlencoded. It also cleans the JSON of unnecessary characters (like line breaks, tabs, and multiple spaces) to ensure the resulting string is valid and optimized for web requests
 
 ## Features
 
@@ -35,7 +35,7 @@ options:
 example: python graphQLConverter.py '{"query": "{ me { name } }"}'
 ```
 
-## Usage Example
+## Usage
 
 ```
 git clone https://github.com/Justice-Reaper/graphQLConverter.git
