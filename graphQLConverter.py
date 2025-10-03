@@ -5,6 +5,7 @@ import urllib.parse
 import argparse
 import sys
 import re
+import os
 
 def clean_json_string(json_str):
     cleaned_str = re.sub(r'[\n\r\f\t\v]', '', json_str)
@@ -29,16 +30,19 @@ def json_to_urlencoded(data):
     return urlencoded_data
 
 def main():
+    script_name = os.path.basename(sys.argv[0])
+
     parser = argparse.ArgumentParser(
+        prog=script_name,
         description="convert a GraphQL JSON to URL encoded format",
-        epilog='example: graphQLConverter \'{"query": "{ me { name } }"}\''
+        epilog=f"example: {script_name} '{{\"query\": \"{{ me {{ name }} }}\"}}'"
     )
 
     parser.add_argument(
         "json",
         type=str,
         nargs="?",
-        help='GraphQL JSON as a string. example: \'{"query": "{ me { name } }"}\''
+        help=f'GraphQL JSON as a string. example: \'{{"query": "{{ me {{ name }} }}"}}\''
     )
 
     args, unknown = parser.parse_known_args()
