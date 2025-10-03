@@ -31,7 +31,7 @@ def json_to_urlencoded(data):
 def main():
     parser = argparse.ArgumentParser(
         description="convert a GraphQL JSON to URL encoded format",
-        epilog='example: python graphQLConverter.py \'{"query": "{ me { name } }"}\''
+        epilog='example: graphQLConverter \'{"query": "{ me { name } }"}\''
     )
 
     parser.add_argument(
